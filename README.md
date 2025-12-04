@@ -1,6 +1,6 @@
 # Frontend Mentor - Social proof section solution
 
-This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -25,14 +25,15 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution]()
-- Live Site URL: [live]()
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/social-proof-section-UOueODDLE6)
+- Live Site URL: [live](https://lackevil.github.io/Social-proof-section/)
 
 ### Built with
 
 - Semantic HTML5 markup + BEM
 - SCSS
 - Flexbox
+- Mobile first
 
 ## Author
 
