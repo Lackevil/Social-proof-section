@@ -107,7 +107,7 @@ body {
   font-size: 1.5rem;
   background-color: hsl(0, 0%, 100%);
   font-family: "League Spartan";
-  background: url(../images/bg-pattern-top-mobile.svg) 0px -30px no-repeat;
+  background: url(../images/bg-pattern-top-mobile.svg) 0rem -3rem no-repeat;
 }
 
 .wrapper {
@@ -210,4 +210,84 @@ body {
   line-height: 1.4;
 }
 
+@media (min-width: 768px) {
+  .social-proof {
+    justify-content: center;
+    align-items: center;
+  }
+  .social-proof__reviews-row {
+    flex-direction: row;
+  }
+  .social-proof-header__list {
+    flex-direction: row;
+  }
+  .social-proof-header__description {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background: url(../images/bg-pattern-top-mobile.svg) 30rem 0rem no-repeat, url(../images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+  }
+  .social-proof {
+    max-width: 110rem;
+    margin: 0 auto;
+  }
+  .social-proof__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10rem;
+  }
+  .social-proof__reviews-row {
+    gap: 3rem;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  .social-proof-header__title {
+    text-align: left;
+    margin: initial;
+    margin-bottom: 2.5rem;
+    font-size: 6rem;
+    max-width: 70%;
+  }
+  .social-proof-header__description {
+    text-align: left;
+    margin: initial;
+    max-width: 70%;
+    line-height: 1.5;
+  }
+  .social-proof-header__rate {
+    flex: 1 1 70%;
+  }
+  .social-proof-header__list {
+    flex-direction: column;
+  }
+  .social-proof-header__item {
+    flex-direction: row;
+    width: 100%;
+    padding: 2rem 3rem;
+    gap: 3rem;
+    font-size: 1.8rem;
+    white-space: nowrap;
+  }
+  .review-item {
+    padding: 4rem 3rem;
+  }
+  .review-item:nth-child(2) {
+    margin-top: 2rem;
+  }
+  .review-item:last-child {
+    margin-top: 4rem;
+  }
+}
+@media (min-width: 1130px) {
+  .social-proof-header__item:first-child {
+    margin-left: -8rem;
+  }
+  .social-proof-header__item:nth-child(2) {
+    margin-left: -4rem;
+  }
+}
 /* -------- Social proof -------- */

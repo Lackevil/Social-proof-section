@@ -24,7 +24,7 @@ body {
   font-size: 1.5rem;
   background-color: $white;
   font-family: "League Spartan";
-  background: url(../images/bg-pattern-top-mobile.svg) 0px -30px no-repeat;
+  background: url(../images/bg-pattern-top-mobile.svg) 0rem -3rem no-repeat;
 }
 
 .wrapper {
@@ -150,6 +150,113 @@ body {
   &__text {
     // letter-spacing: 0.1rem;
     line-height: 1.4;
+  }
+}
+
+@media (min-width: 768px) {
+  .social-proof {
+    justify-content: center;
+    align-items: center;
+
+    &__reviews-row {
+      flex-direction: row;
+    }
+  }
+
+  .social-proof-header {
+    &__list {
+      flex-direction: row;
+    }
+
+    &__description {
+      max-width: 60%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: url(../images/bg-pattern-top-mobile.svg) 30rem 0rem no-repeat,
+      url(../images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+  }
+
+  .social-proof {
+    max-width: 110rem;
+    margin: 0 auto;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10rem;
+    }
+
+    &__reviews-row {
+      gap: 3rem;
+      align-items: flex-start;
+      align-content: flex-start;
+    }
+  }
+
+  .social-proof-header {
+    &__title {
+      text-align: left;
+      margin: initial;
+      margin-bottom: 2.5rem;
+      font-size: 6rem;
+      max-width: 70%;
+    }
+
+    &__description {
+      text-align: left;
+      margin: initial;
+      max-width: 70%;
+      line-height: 1.5;
+    }
+
+    &__rate {
+      flex: 1 1 70%;
+    }
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      flex-direction: row;
+      width: 100%;
+      padding: 2rem 3rem;
+      gap: 3rem;
+      font-size: 1.8rem;
+      white-space: nowrap;
+    }
+  }
+
+  .review-item {
+    padding: 4rem 3rem;
+
+    &:nth-child(2) {
+      margin-top: 2rem;
+    }
+
+    &:last-child {
+      margin-top: 4rem;
+    }
+  }
+}
+
+@media (min-width: 1130px) {
+  .social-proof-header {
+    &__item {
+      &:first-child {
+        margin-left: -8rem;
+      }
+
+      &:nth-child(2) {
+        margin-left: -4rem;
+      }
+    }
   }
 }
 
